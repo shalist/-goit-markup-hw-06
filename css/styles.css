@@ -470,14 +470,14 @@ address {
   display: inline-block;
   margin-bottom: 16px;
 }
+.footer-text {
+  color: var(--primary-bg-color);
+}
+
 .text-second-block {
   margin-bottom: 16px;
   color: var(--primary-bg-color);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 
 /**
@@ -485,6 +485,10 @@ address {
   | SOCIAL LINK ICON
   |============================
 */
+
+.social-media {
+  margin-right: 80px;
+}
 .social-list {
   display: flex;
   justify-content: center;
@@ -520,6 +524,31 @@ address {
 }
 .footer-social {
   gap: 16px;
+}
+.footer-input {
+  width: 264px;
+  height: 40px;
+  background-color: var(--dark-accent);
+  border: 1px solid var(--primary-bg-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-label {
+  display: flex;
+  gap: 24px;
+}
+
+.button-footer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
 }
 
 /**
