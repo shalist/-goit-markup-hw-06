@@ -597,9 +597,11 @@
         </div>
         <div class="social-imput">
           <p class="title-features text-second-block">Subscribe</p>
-          <label class="footer-label">
+          <div class="footer-label">
+            <label for="footer-email-label"></label>
             <input
               class="footer-input"
+              id="footer-email-label"
               type="email"
               name="email"
               placeholder="E-mail"
@@ -611,7 +613,7 @@
                 <use href="./images/icons.svg#telegram-icon"></use>
               </svg>
             </button>
-          </label>
+          </div>
         </div>
       </div>
     </footer>
@@ -629,11 +631,11 @@
           <p class="modal-title">
             Leave your contacts and we will call you back
           </p>
-          <label class="modal-label" for="modal-label">Name</label>
+          <label class="modal-label" for="name-label">Name</label>
           <div class="icon-position">
             <input
               class="modal-input"
-              id="modal-label"
+              id="name-label"
               type="text"
               name="name"
               autocomplete="on"
@@ -642,11 +644,11 @@
               <use href="./images/icons.svg#contact"></use>
             </svg>
           </div>
-          <label class="modal-label" for="modal-label">Phone number</label>
+          <label class="modal-label" for="phone-label">Phone number</label>
           <div class="icon-position">
             <input
               class="modal-input"
-              id="modal-label"
+              id="phone-label"
               type="tel"
               name="phone"
               autocomplete="on"
@@ -655,11 +657,11 @@
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
-          <label class="modal-label" for="modal-label">Email</label>
+          <label class="modal-label" for="email-label">Email</label>
           <div class="icon-position">
             <input
               class="modal-input"
-              id="modal-label"
+              id="email-label"
               type="email"
               name="email"
               autocomplete="on"
@@ -668,27 +670,25 @@
               <use href="./images/icons.svg#email"></use>
             </svg>
           </div>
-          <label class="modal-label" for="modal-label">Comment</label>
+          <label class="modal-label" for="coment-label">Comment</label>
           <textarea
             class="modal-input textarea-input"
-            id="modal-label"
+            id="coment-label"
             name="comment"
             rows="5"
             placeholder="Text input"
           ></textarea>
           <div class="modal-checkbox">
             <input
-              class="checkbox-icon visually-hidden"
+              class="checkbox-icon"
               type="checkbox"
               name="Privacy Policy"
-              autocomplete="on"
             />
-            <svg class="checkbox-icon-reserve" width="16" height="16">
-              <use href="./images/icons.svg#checkbox-click"></use>
-            </svg>
             <p>
               I accept the terms and conditions of the
-              <span><a href="">Privacy Policy</a></span>
+              <span
+                ><a class="footer-link link" href="">Privacy Policy</a></span
+              >
             </p>
           </div>
           <button class="modal-button" type="submit">Send</button>
