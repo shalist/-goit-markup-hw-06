@@ -528,10 +528,16 @@ address {
 .footer-input {
   width: 264px;
   height: 40px;
+  padding-left: 16px;
   background-color: var(--dark-accent);
   border: 1px solid var(--primary-bg-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input:hover,
+.footer-input:focus {
+  border-color: var(--accent-color);
 }
 .footer-label {
   display: flex;
@@ -549,6 +555,13 @@ address {
   border: 0;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-footer:hover,
+.button-footer:focus {
+  border: none;
+  background-color: var(--hover-focus-color);
 }
 
 /**
@@ -646,11 +659,11 @@ address {
 
   color: var(--company-icon);
 }
+
 .modal-checkbox {
   display: flex;
   justify-content: flex-start;
   gap: 8px;
-  margin-top: 16px;
   margin-bottom: 24px;
   width: 360px;
   font-weight: 400;
@@ -669,14 +682,14 @@ address {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-input {
   height: 120px;
   padding-top: 8px;
   padding-left: 16px;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -684,18 +697,24 @@ address {
   color: var(--company-icon);
   resize: none;
 }
-.modal-icon-input {
-  fill: var(--dark-accent);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .icon-position {
   position: relative;
 }
+.modal-input:hover + .modal-icon-input,
+.modal-input:focus + .modal-icon-input {
+  fill: var(--accent-color);
+}
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
 .modal-icon-input {
   position: absolute;
-  top: 11px;
+  top: 8px;
   left: 16px;
+  fill: var(--dark-accent);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button {
   min-width: 169px;
