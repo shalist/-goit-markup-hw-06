@@ -533,7 +533,8 @@ address {
   border: 1px solid var(--primary-bg-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  transform: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-input:hover,
 .footer-input:focus {
@@ -682,6 +683,7 @@ address {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -696,6 +698,7 @@ address {
   letter-spacing: 0.04em;
   color: var(--company-icon);
   resize: none;
+  outline: none;
 }
 .icon-position {
   position: relative;
